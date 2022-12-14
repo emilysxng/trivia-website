@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>How well do you know me?</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Multiple Choice Questions:</h2>
+                <hr>
+                <div>
+                    <h3> What is my least favourite kind of food? </h3>
+                    <p class = "feedback"> FEEDBACK: Please select an answer</p>
+                    <input value="Spicy" type="button" class="mc_correct mc_question"> <!-- every answer has 2 classes -->
+                    <input value="Sour" type="button" class="mc_incorrect mc_question">
+                    <input value="Sweet" type="button" class="mc_incorrect mc_question">
+                    <input value="Salty" type="button" class="mc_incorrect mc_question">
+                </div>
+
+                <div>
+                    <h3> What post-secondary institution do I currently attend? </h3>
+                    <p class = "feedback"> FEEDBACK: Please select an answer</p>
+                    <input value="York University" type="button" class="mc_incorrect mc_question">
+                    <input value="Simon Fraser University" type="button" class="mc_incorrect mc_question">
+                    <input value="McMaster University" type="button" class="mc_incorrect mc_question">
+                    <input value="University of British Columbia" type="button" class="mc_correct mc_question">
+                </div>
+
+                <div>
+                    <h3> What kind of part-time job did I have in high school? </h3>
+                    <p class = "feedback"> FEEDBACK: Please select an answer</p>
+                    <input value="Grocery Store Cashier" type="button" class="mc_incorrect mc_question">
+                    <input value="Bubble Tea Barista" type="button" class="mc_correct mc_question">
+                    <input value="Retail Sales Associate" type="button" class="mc_incorrect mc_question">
+                    <input value="Unemployed" type="button" class="mc_incorrect mc_question">
+                </div>
+
+                <div>
+                    <h3> What other language am I semi-proficient at? </h3>
+                    <p class = "feedback"> FEEDBACK: Please select an answer</p>
+                    <input value="Korean" type="button" class="mc_incorrect mc_question">
+                    <input value="French" type="button" class="mc_incorrect mc_question">
+                    <input value="Cantonese" type="button" class="mc_incorrect mc_question">
+                    <input value="Mandarin" type="button" class="mc_correct mc_question">
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Free Response Questions: (answers in lowercase)</h2>
+                <div>
+                    <hr>
+                    <h3> What is my birthday? (MM/DD/YYYY) </h3>
+                    <p class="feedback">FEEDBACK: Please input an answer</p>
+                    <p class="correct_answer">10/03/2004</p>
+                    <input type="text" autofocus placeholder="Answer Here" class="fr_question">
+                    <input value="Check Answer" type="button" class="submit_button">
+                </div>
+
+                <div>
+                    <h3> What is my favourite dessert? </h3>
+                    <p class="feedback">FEEDBACK: Please input an answer</p>
+                    <p class="correct_answer">shaved ice</p>
+                    <input type="text" autofocus placeholder="Answer Here" class="fr_question">
+                    <input value="Check Answer" type="button" class="submit_button">
+                </div>
+
+                <div>
+                    <h3> What city was I born in? </h3>
+                    <p class="feedback">FEEDBACK: Please input an answer</p>
+                    <p class="correct_answer">toronto</p>
+                    <input type="text" autofocus placeholder="Answer Here" class="fr_question">
+                    <input value="Check Answer" type="button" class="submit_button">
+                </div>
+            </div>
+        </div>
+        <script src="question_checker.js"> </script>
+    </body>
+</html>
